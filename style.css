@@ -24,11 +24,17 @@ footer {
     padding: 1vw;
 }
 
-img {
+.portImg {
     width: 350px;
     height: 350px;
 }
 
 .bottom {
     margin-bottom: 10%;
+}
+
+.aboutMeImg {
+    width: 150px;
+    height: 150px;
+    float: left;
 }
