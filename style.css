@@ -23,3 +23,12 @@ footer {
     line-height: 1vw;
     padding: 1vw;
 }
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+.bottom {
+    margin-bottom: 10%;
+}
