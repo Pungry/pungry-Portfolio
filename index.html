@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <!--Link to the external Bootstrap stylesheet at the top so that I could link to my own personal CSS stylesheet and play around with the look of certain Bootstrap elements-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Link to the favicon, which is, of course, a penguin-->
     <link rel="shortcut icon" href="https://i.pinimg.com/originals/95/f8/1a/95f81a10dc600b5d1eff4512e70dda8c.jpg" type="image/x-icon">
+    <!--Link to the external Google fonts used. I was talking to a friend about website design and he said there are only seven or so accepted "website fonts" and everything else looks like garbage. Can't say I've noticed that yet.-->
     <link href="https://fonts.googleapis.com/css2?family=Kufam&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Link to my own personal stylesheet.-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!--Navbar from Bootstrap used here and across all three pages. Makes it easy to go across all three pages.-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Quint Turner</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +30,7 @@
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
+            <!--Made this nav item active and not link elsewhere because the About page is the current page-->
             <li class="nav-item active">
                 <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
             </li>
@@ -32,9 +38,12 @@
         </div>
     </nav>
 
+    <!--Wrapped the entire set of content in a container separate from the Navbar to let the Navbar span the screen and to separately define the area of the container-->
+
     <main class="container">
       <h1>About Me</h1>
       <hr>
+      <!--I really like penguins so I used a pic of one instead of a real selfie.-->
       <img class="aboutMeImg" src="https://www.gannett-cdn.com/presto/2019/09/19/USAT/c1421ef3-cbdc-44f8-abda-7029d51f14d0-african_penguin.jpg?crop=4016,4016,x1804,y0&width=150&height=150&format=pjpg&auto=webp" alt="Close up picture of a penguin">
       <p class = "aboutMe">
         I'm Quint Turner. As you can see by my selfie on the left, I love penguins. But I also love other things. When I'm not writing code, I'm probably writing comedic blog posts, playing video games, or watching sports. If you move on over to my portfolio page, you'll find a few links to places you can find what I've written. 
@@ -44,9 +53,11 @@
       </p>
     </main>
 
+    <!--Similar to the Navbar, I placed the footer outside of the container so that I could play with its positioning and look without messing with the container. I am curious about how much "copyright" I do have on this website. Since a lot of it was copy-pasted code from Bootstrap, I can't have copyright on that, but do I have copyright on, say, the paragraph about me? And what sort of protections do I even have on that? Could I get millions of dollars suing someone for copying that content? Just interests me.-->
     <footer><p>Copyright</p></footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <!--The links to all the external Bootstrap Javascript code so all the copy-pasted code works properly-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>

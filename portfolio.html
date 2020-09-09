@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>About Me</title>
+    <!--Link to the external Bootstrap stylesheet at the top so that I could link to my own personal CSS stylesheet and play around with the look of certain Bootstrap elements-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Link to the favicon, which is, of course, a penguin-->
     <link rel="shortcut icon" href="https://i.pinimg.com/originals/95/f8/1a/95f81a10dc600b5d1eff4512e70dda8c.jpg" type="image/x-icon">
+    <!--Link to the external Google fonts used. I was talking to a friend about website design and he said there are only seven or so accepted "website fonts" and everything else looks like garbage. Can't say I've noticed that yet.-->
     <link href="https://fonts.googleapis.com/css2?family=Kufam&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Link to my own personal stylesheet.-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!--Navbar from Bootstrap used here and across all three pages. Makes it easy to go across all three pages.-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Quint Turner</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +27,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <!--This is the Portfolio page so that's the nav item indicated as active and contains a link that doesn't go anywhere-->
             <li class="nav-item active">
               <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
             </li>
@@ -32,13 +38,15 @@
         </div>
     </nav>
 
+    <!--The portfolio itself ended up taking a lot more screen space than I expected due to the 350x350 pics. Therefore, I defined it with two classes, one as "container" to keep the look of the page consistent across the website, and one as "bottom" to put in a different bottom margin for this page alone because it's the only page that stretches so far down a screen. Having a 10% margin on the other pages looked weird, but it works for this page.-->
     <main class="container bottom">
       <h1>Portfolio</h1>
       <hr>
       <article class="row">
         <div class="col-md-4 col-sm-12">
-          <a href="https:www.twitter.com/Pungry" target="_blank"><img class="portImg" src="https://www.holderscomponents.com/wp-content/uploads/2017/06/twitter-logo.png" alt="Twitter logo"></a>
+          <a href="https://twitter.com/Pungry" target="_blank"><img class="portImg" src="https://www.holderscomponents.com/wp-content/uploads/2017/06/twitter-logo.png" alt="Twitter logo"></a>
         </div>
+        <!--This blank column is here to provide space between the other two columns.-->
         <div class="col-md-2"></div>
         <br>
         <div class="col-md-4 col-sm-12">
@@ -50,6 +58,7 @@
         <div class="col-md-4 col-sm-12">
           <a href="https://www.clippings.me/quintturner" target = "_blank"><img class="portImg" src="https://m.media-amazon.com/images/I/71npg1qupjL._AC_SS350_.jpg" alt="Notebook photo linking to writing portfolio"></a>
         </div>
+        <!--This blank column is here to provide space between the other two columns.-->
         <div class="col-md-2"></div>
         <br>
         <div class="col-md-4 col-sm-12">
@@ -63,10 +72,12 @@
         </div>
       </article>
     </main>
-
+    
+    <!--Similar to the Navbar, I placed the footer outside of the container so that I could play with its positioning and look without messing with the container.-->
     <footer><p>Copyright</p></footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  
+  <!--The links to all the external Bootstrap Javascript code so all the copy-pasted code works properly-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
